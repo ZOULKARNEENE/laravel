@@ -5,6 +5,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name("acceuil");
 
- Route::get('/etudiant',[EtudiantController::class,'index']);
+ Route::get('/etudiant',[EtudiantController::class,'index'])->name("etudiant");
